@@ -49,7 +49,7 @@ public class Pathfinder {
 
     private int hCostEst(Node a, Node b) {
         int basicDist = this.getDistance(a, b);
-        int verticalCost = (b.getPos().getY() - a.getPos().getY()) / 2;
+        int verticalCost = (b.getPos().getY() - a.getPos().getY());
         return basicDist + verticalCost;
     }
 
